@@ -22,7 +22,7 @@ export default function app() {
   const [isFlipped, setIsFlipped] = useState(false)
   
   const handleCardClick = () => {
-    setIsFlipped(!isFlipped)
+    setIsFlipped((pre)=> !pre)
   }
 
   return (
